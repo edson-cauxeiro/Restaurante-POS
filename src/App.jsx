@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-// Persnol Imports
-import { Home, Auth, Orders } from './pages'
+// Personal Imports
+import { Home, Auth, Orders, Tables } from './pages'
 import Header from './components/shared/Header'
 
 
@@ -13,6 +13,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/tables" element={<Tables />} />
+          {/* <Route path="/more" element={<More />} /> */}
         </Routes>
       </Router>
     </>
